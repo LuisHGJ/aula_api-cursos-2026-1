@@ -1,9 +1,12 @@
 @url = http://localhost:8080/categorias
 
+@token = eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJGQVRFQyBBUEkiLCJzdWIiOiJhZG1pbiIsImV4cCI6MTc3NDQ4MTI3OH0.athiKK2sJFawsNYNddeEUkNf-TtZk1OFT61SW0w3m64
 GET {{url}}
+Authorization: Bearer {{token}}
 
 ###
 POST {{url}}
+Authorization: Bearer {{token}}
 Content-Type: application/json
 
 {

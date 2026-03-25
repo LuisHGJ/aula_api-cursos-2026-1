@@ -1,0 +1,19 @@
+@url = http://localhost:8080/instrutor
+
+@token = eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJGQVRFQyBBUEkiLCJzdWIiOiJhZG1pbiIsImV4cCI6MTc3NDQ4NTA3N30.2_iuZjECGcmoJa9DcBrcDcO0DBHw-N5IHuMOq_nETQ4
+GET {{url}}
+Authorization: Bearer {{token}}
+
+###
+GET {{url}}/formacao/top
+Authorization: Bearer {{token}}
+
+###
+POST {{url}}
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+    "nome" : "luis",
+    "formacao" : "top"
+}
